@@ -14,11 +14,24 @@
     "shortcuts": [
         [
             "bin64\\manifold.exe",
-            "Manifold 9.0.174.1"
+            "Manifold 9"
         ],
         [
             "bin\\manifold.exe",
-            "Manifold 9.0.174.1 (32bit mode)"
+            "Manifold 9 (32bit mode)"
         ]
-    ]
+    ],
+    "checkver": {
+        "url": "http://www.georeference.org/forum/",
+        "regex": "Manifold 9 Edge: (9\\.0\\.[\\d.]+)",
+        "replace": "$1"
+    },
+    "autoupdate": {
+        "url": "http://www.manifoldgis.com/updates/working/manifold-$version-x64.zip",
+        "hash": {
+            "url": "http://www.manifold.net/updates/downloads.shtml",
+            "regex": "$sha256.Release 9 Edge: Get the latest,"
+        },
+        "note": "Note after autoupdate"
+    }
 }
