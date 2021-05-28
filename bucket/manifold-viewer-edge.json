@@ -8,7 +8,7 @@
     },
     "url": "http://www.manifoldgis.com/updates/working/manifold-viewer-9.0.174.1-x64.zip",
     "hash": "sha256:c3989a0eb2114a61ad678e7095cef9d27d8921ff4cece3da5fc53c8456c006c8",
-    "extract_dir":  "manifold-viewer-9.0.174.1-x64",
+    "extract_dir": "manifold-viewer-9.0.174.1-x64",
     "shortcuts": [
         [
             "bin64\\manifold.exe",
@@ -19,5 +19,4 @@
             "Manifold Viewer 9.0.174.1 (32bit mode)"
         ]
     ]
-
 }
