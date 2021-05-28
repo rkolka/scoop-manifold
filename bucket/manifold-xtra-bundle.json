@@ -1,0 +1,56 @@
+{
+    "version": "9.0.174.1",
+    "description": "Cutting Edge build of Manifold Release 9 (custom experiment)",
+    "homepage": "http://manifold.net/",
+    "license": "Proprietary",
+    "suggest": {
+         "Array": [
+            "extras/vcredist2017",
+            "Ironpython",
+            "gdal",
+            ""
+         ]
+
+    },
+    "url": [
+        "http://www.manifoldgis.com/updates/working/manifold-9.0.174.1-x64.zip",
+        "http://manifold.net/files/ui.zip",
+        "http://www.manifoldgis.com/files/open_source_db_64.zip",
+        "http://www.manifoldgis.com/files/ironpython-2.7.9-net45.zip"
+
+    ],
+    "hash": [
+        "sha256:5792552430e8e95c264337f18af50d1296c171b2c799fa12a56cb1d7cad82be0",
+        "45555E39678CEBF9C6ED15A4919B83FAF684286E74B82CD056F5882556822B50",
+        "370d795e0b3d718c667b6ad493b830da8c089e16fdf6bc21fc243ca3d86d88a3",
+        "b03d37c3e3e14bb6692634c6d805d2c5222441a38a9655d99c207778fd7c74da"
+    ],
+    "extract_dir": [
+        "manifold-9.0.174.1-x64"
+    ],
+    "extract_to": [
+        ".",
+        "bin64\\",
+        "bin64\\",
+        "shared\\"
+    ],
+    "bin": "bin64\\manifold.exe",
+
+    "shortcuts": [
+        [
+            "bin64\\manifold.exe",
+            "Manifold RK 9.0.174.1"
+        ],
+        [
+            "bin\\manifold.exe",
+            "Manifold RK 9.0.174.1 (32bit mode)"
+        ]
+    ]
+    , "persist": [
+        "shared\\logfiles",
+        "shared\\add-ins",
+        "shared\\debug"
+    ]
+
+
+}

@@ -1,0 +1,22 @@
+{
+    "version": "9.0.174",
+    "description": "Manifold 9 is powerful parallel GIS, ETL, data science and DBMS tool. Manifold official builds are issued about every 4-6 months.",
+    "homepage": "http://manifold.net/",
+    "license": "Proprietary",
+    "suggest": {
+        "Microsoft Visual C++ Redistributable 2017": "extras/vcredist2017"
+    },
+    "url": "http://www.manifoldgis.com/updates/manifold-9.0.174-x64.zip",
+    "hash": "sha256:99401e3fdc181f7463f55379a4a62f32e8554960cbbf9fd4889f6e61f8d567f3",
+    "extract_dir": "manifold-9.0.174-x64",
+    "shortcuts": [
+        [
+            "bin64\\manifold.exe",
+            "Manifold 9.0.174"
+        ],
+        [
+            "bin\\manifold.exe",
+            "Manifold 9.0.174 (32-bit)"
+        ]
+    ]
+}
