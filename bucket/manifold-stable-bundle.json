@@ -12,11 +12,25 @@
     "shortcuts": [
         [
             "bin64\\manifold.exe",
-            "Manifold (Bundle) 9.0.174"
+            "Manifold (Bundle)"
         ],
         [
             "bin\\manifold.exe",
-            "Manifold (Bundle) 9.0.174 (32-bit)"
+            "Manifold (Bundle) (32-bit)"
         ]
-    ]
+    ],
+    "checkver": {
+        "url": "http://www.georeference.org/forum/",
+        "regex": "Manifold 9.+:.+(9\\.0\\.[\\d]+)",
+        "replace": "$1"
+    },
+    "autoupdate": {
+        "url": "http://www.manifoldgis.com/updates/working/manifold-$version-x64-fat.zip",
+        "extract_dir": "manifold-$version-x64-fat",
+        "hash": {
+            "url": "http://www.manifold.net/updates/downloads.shtml",
+            "regex": "manifold-9\\.0\\.[\\d]+-x64-fat.zip.+ $sha256"
+        },
+        "note": "Note after autoupdate"
+    }
 }
