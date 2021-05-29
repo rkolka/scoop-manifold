@@ -39,6 +39,7 @@
             ],
             "focus": true,
             "open": true,
+            "default" : true
         },
     ],
     "yaml.format.bracketSpacing": true,
@@ -54,4 +55,5 @@
             ".github/workflows/*",
         ],
     },
+    "terminal.integrated.automationShell.windows": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
 }
