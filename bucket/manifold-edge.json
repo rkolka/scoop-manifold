@@ -27,7 +27,7 @@
     },
     "autoupdate": {
         "url": "http://www.manifoldgis.com/updates/working/manifold-$version-x64.zip",
-        "extract_dir": "manifold-viewer-$version-x64",
+        "extract_dir": "manifold-$version-x64",
         "hash": {
             "url": "http://www.manifold.net/updates/downloads.shtml",
             "regex": "manifold-[0-9.]+-x64.zip.+ $sha256"
