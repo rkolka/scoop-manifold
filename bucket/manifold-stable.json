@@ -6,7 +6,7 @@
     "suggest": {
         "Microsoft Visual C++ Redistributable 2017": "extras/vcredist2017"
     },
-    "url": "http://www.manifoldgis.com/updates/working/manifold-9.0.174-x64.zip",
+    "url": "http://www.manifoldgis.com/updates/manifold-9.0.174-x64.zip",
     "hash": "99401e3fdc181f7463f55379a4a62f32e8554960cbbf9fd4889f6e61f8d567f3",
     "extract_dir": "manifold-9.0.174-x64",
     "shortcuts": [
@@ -25,7 +25,7 @@
         "replace": "$1"
     },
     "autoupdate": {
-        "url": "http://www.manifoldgis.com/updates/working/manifold-$version-x64.zip",
+        "url": "http://www.manifoldgis.com/updates/manifold-$version-x64.zip",
         "extract_dir": "manifold-$version-x64",
         "hash": {
             "url": "http://www.manifold.net/updates/downloads.shtml",
