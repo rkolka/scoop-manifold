@@ -32,6 +32,7 @@ $ `scoop install manifold-edge`
 ## Descriptions
 
 ### manifold-edge (9.0.174.2) :+1: **Recommended.**
+
 Manifold 9 is powerful parallel GIS, ETL, data science and DBMS tool. Cutting Edge builds are issued monthly or semimonthly.
 
 ### manifold-stable (9.0.174)
