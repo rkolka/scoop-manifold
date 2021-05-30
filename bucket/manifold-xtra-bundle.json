@@ -50,7 +50,21 @@
         "shared\\logfiles",
         "shared\\add-ins",
         "shared\\debug"
-    ]
+    ],
+    "checkver": {
+        "url": "http://www.georeference.org/forum/",
+        "regex": "Manifold 9 Edge.+:.+(9\\.0\\.[\\d.]+)",
+        "replace": "$1"
+    },
+    "autoupdate": {
+        "url": "http://www.manifoldgis.com/updates/working/manifold-$version-x64.zip",
+        "extract_dir": "manifold-$version-x64",
+        "hash": {
+            "url": "http://www.manifold.net/updates/downloads.shtml",
+            "regex": "manifold-[0-9.]+-x64.zip.+ $sha256"
+        },
+        "note": "Note after autoupdate"
+    }
 
 
 }
