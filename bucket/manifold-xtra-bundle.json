@@ -4,30 +4,26 @@
     "homepage": "http://manifold.net/",
     "license": "Proprietary",
     "suggest": {
-         "Array": [
+        "Array": [
             "extras/vcredist2017",
             "Ironpython",
             "gdal",
             ""
-         ]
-
+        ]
     },
     "url": [
         "http://www.manifoldgis.com/updates/working/manifold-9.0.174.2-x64.zip",
         "http://manifold.net/files/ui.zip",
         "http://www.manifoldgis.com/files/open_source_db_64.zip",
         "http://www.manifoldgis.com/files/ironpython-2.7.9-net45.zip"
-
     ],
     "hash": [
         "b4b0b432199473ac257031460339affc13131a246a625f80e52bea2ec8e638e0",
-        "45555E39678CEBF9C6ED15A4919B83FAF684286E74B82CD056F5882556822B50",
+        "45555e39678cebf9c6ed15a4919b83faf684286e74b82cd056f5882556822b50",
         "370d795e0b3d718c667b6ad493b830da8c089e16fdf6bc21fc243ca3d86d88a3",
         "b03d37c3e3e14bb6692634c6d805d2c5222441a38a9655d99c207778fd7c74da"
     ],
-    "extract_dir": [
-        "manifold-9.0.174.2-x64"
-    ],
+    "extract_dir": "manifold-9.0.174.2-x64",
     "extract_to": [
         ".",
         "bin64\\",
@@ -35,7 +31,6 @@
         "shared\\"
     ],
     "bin": "bin64\\manifold.exe",
-
     "shortcuts": [
         [
             "bin64\\manifold.exe",
@@ -45,8 +40,8 @@
             "bin\\manifold.exe",
             "Manifold RK (32bit mode)"
         ]
-    ]
-    , "persist": [
+    ],
+    "persist": [
         "shared\\logfiles",
         "shared\\add-ins",
         "shared\\debug"
@@ -65,6 +60,4 @@
         },
         "note": "Note after autoupdate"
     }
-
-
 }
