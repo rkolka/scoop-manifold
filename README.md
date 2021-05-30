@@ -31,15 +31,14 @@ $ `scoop install manifold-edge`
 
 ## Descriptions
 
-### manifold-edge (9.0.174.2) **Recommended.**
-
+### manifold-edge (9.0.174.2) :+1: **Recommended.**
 Manifold 9 is powerful parallel GIS, ETL, data science and DBMS tool. Cutting Edge builds are issued monthly or semimonthly.
 
 ### manifold-stable (9.0.174)
 
 Official build of Manifold 9. Manifold official builds are issued about every 4-6 months.
 
-### manifold-viewer-edge (9.0.174.2) ***Free viewer!*** **Recommended.**
+### manifold-viewer-edge (9.0.174.2) ***Free viewer!*** :+1: **Recommended.**
 
 Manifold Viewer is the free, read-only version of Manifold Release 9 - a GIS, ETL, data science and DBMS tool. Cutting Edge builds are issued monthly or semimonthly.
 
