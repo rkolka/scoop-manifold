@@ -1,6 +1,4 @@
-# Generic scoop bucket
-
-❗❗🎉 Repository was converted into Template. See [blog](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/?utm_campaign=1559837005&utm_medium=social&utm_source=twitter&utm_content=1559837005) for more information. 🎉❗❗
+# Generic Shovel bucket
 
 In this repository you will find everything you need to know about creating custom bucket with appveyor support.
 
@@ -22,8 +20,7 @@ In this repository you will find everything you need to know about creating cust
 
 ### `bin` Folder
 
-Scripts which will save you time while debuging and writing manifests.
-If you need help how to use them just run `Get-Help .\bin\<BINARY>.ps1`.
+If you need custom scripts you should create `bin` folder.
 
 ### `Bucket.Tests.ps1` File
 
@@ -53,18 +50,16 @@ Contains all syntax highlighting, code formating, manifest creating tools you co
             - Create only architecture property with 64bit and 32bit
         - `upAr`
             - Create autoupdate property with architecture
-        - `persistCheck`, `persistInlineContent`, `persistInlineNoContent`
-            - Installer / pre_install script for checking if file is already persisted or need to be created
 
 ### `.github` Folder
 
 GitHub repository configuration.
 
 - `workflows` folder
-    - Linux (legacy) version [GitHub Actions](https://github.com/features/actions) configuration for automatic issue/PR/updates handling.
-    - Windows version of actions could be used for better and future proof implementation (see <https://github.com/Ash258/Scoop-GithubActions/tree/main-win> for updated configs)
+    - [GitHub Actions](https://github.com/features/actions) configuration for automatic issue/PR/updates handling
+    - Refer to [GithubActions repository](https://github.com/shovel-org/GithubActions) for more information
 - `CODEOWNERS`
-    - Pull requests will request review for users defined in this file
+    - Pull requests will automatically request review for users defined in this file
 - `PULL REQUEST TEMPLATE`
     - Prefilled pull request types with proper titles
 - `ISSUE TEMPLATE`
@@ -87,11 +82,11 @@ GitHub repository configuration.
 ## How to use and adopt this bucket
 
 1. Click on `Use this template` to create new repository in your account with same files
-1. Open project settings and **give your bucket in new name**
+1. Open project settings and **give your bucket new name**
 1. Add proper description of repository
     - Information about what type of manifests could be found here
-1. Add `scoop-bucket` tag for repository
-    - Your manifests will be automatically available at <https://scoop-docs.now.sh/apps/>
+1. Add `shovel-bucket` tag for repository
+    - If approved, your bucket could be part of <https://shovel.ash258.com> (Currently still Work-in-progress)
 1. Enable appveyor CI/CD
     1. Register / Login to [Appveyor](https://ci.appveyor.com/login)
     1. Click `New Project`
@@ -113,13 +108,8 @@ GitHub repository configuration.
 1. _[optional]_ Configure remote repository
     1. `git remote add 'upstream' 'https://github.com/Ash258/GenericBucket.git'`
     - This step will allow you to synchronize changes with this template repository
-    - If some changes are pushed into this repository and you want to reflect them into your bucket, you can simply do something like:
-        - `git fetch --all`
-        - `git checkout -B upstream-master -t upstream/master`
-        - Do changes
-        - `git merge master` or create PR in github
 1. Create proper README.md
-    1. [Open this README in the browser for reference](https://github.com/Ash258/GenericBucket/tree/master/README.md)
+    1. [Open this README in the browser for reference](https://github.com/shovel-org/GenericBucket/tree/main/README.md)
     1. Open `README.template.md`
     1. Replace all `%%templatestring%%` with real and according values
         1. Replace appveyor status badge with yours
@@ -127,8 +117,8 @@ GitHub repository configuration.
     1. Override this README with completed `README.template.md`
     1. Remove template `README.template.md`
 1. Repository tweaks
-    1. Open `.github\CODEOWNERS` and change `@Ash258` to desired github username
+    1. Open `.github\CODEOWNERS` and change `@Ash258` to desired GitHub username
     1. Actions
         1. Open each file in `.github\workflows` and change `youremail@email.com` with your email
-        1. Visit <https://github.com/Ash258/Scoop-GithubActions> for more information
+        1. Visit <https://github.com/shovel-org/GithubActions> for more information
 1. 🎉🎉 Everything set. High quality and automated bucket is ready for new users 🎉🎉
