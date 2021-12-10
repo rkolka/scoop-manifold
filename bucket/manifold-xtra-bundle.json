@@ -1,5 +1,5 @@
 {
-    "version": "9.0.175.6",
+    "version": "9.0.175.7",
     "description": "Cutting Edge build of Manifold Release 9 (custom experiment)",
     "homepage": "http://manifold.net/",
     "license": "Proprietary",
@@ -12,18 +12,18 @@
         ]
     },
     "url": [
-        "http://www.manifoldgis.com/updates/working/manifold-9.0.175.6-x64.zip",
+        "http://www.manifoldgis.com/updates/working/manifold-9.0.175.7-x64.zip",
         "http://manifold.net/files/ui.zip",
         "http://www.manifoldgis.com/files/open_source_db_64.zip",
         "http://www.manifoldgis.com/files/ironpython-2.7.9-net45.zip"
     ],
     "hash": [
-        "b8de401a9597c90f1386ad32c035a20408bfeae27ee84a43ba0d1688a52f4cad",
+        "ac7a257e0d91980c847c9763434328953dcbd91cdc56ae0e653fab118678bafc",
         "dfa9761fcbd6536b22804af28d73ac04c964c63ca5cba18daa00264cb6ccaf43",
         "386369183f428c780bb859b7d8ea0e0c0493044cb6fb4826d0306f5aa1550d42",
         "b03d37c3e3e14bb6692634c6d805d2c5222441a38a9655d99c207778fd7c74da"
     ],
-    "extract_dir": "manifold-9.0.175.6-x64",
+    "extract_dir": "manifold-9.0.175.7-x64",
     "extract_to": [
         ".",
         "bin64\\",
