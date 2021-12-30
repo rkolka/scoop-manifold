@@ -1,5 +1,5 @@
 {
-    "version": "9.0.175.7",
+    "version": "9.0.176",
     "description": "Cutting Edge build of Manifold Release 9 (custom experiment)",
     "homepage": "http://manifold.net/",
     "license": "Proprietary",
@@ -12,18 +12,18 @@
         ]
     },
     "url": [
-        "http://www.manifoldgis.com/updates/working/manifold-9.0.175.7-x64.zip",
+        "http://www.manifoldgis.com/updates/working/manifold-9.0.176-x64.zip",
         "http://manifold.net/files/ui.zip",
         "http://www.manifoldgis.com/files/open_source_db_64.zip",
         "http://www.manifoldgis.com/files/ironpython-2.7.9-net45.zip"
     ],
     "hash": [
-        "ac7a257e0d91980c847c9763434328953dcbd91cdc56ae0e653fab118678bafc",
+        "8770b708b0d1e0a791db8e86a285d9c7f029093d59bcd2666c073134902196be",
         "999e162c29636dc20c7ca86292799510a42ce16258cdc47b5792a60ceabf41ea",
         "386369183f428c780bb859b7d8ea0e0c0493044cb6fb4826d0306f5aa1550d42",
         "b03d37c3e3e14bb6692634c6d805d2c5222441a38a9655d99c207778fd7c74da"
     ],
-    "extract_dir": "manifold-9.0.175.7-x64",
+    "extract_dir": "manifold-9.0.176-x64",
     "extract_to": [
         ".",
         "bin64\\",
@@ -47,16 +47,16 @@
         "shared\\debug"
     ],
     "checkver": {
-        "url": "http://www.georeference.org/forum/",
-        "regex": "Manifold 9 Edge.+:.+(9\\.0\\.[\\d.]+)",
+        "url": "https://manifold.net/updates/download_9.shtml",
+        "regex": "https://manifoldgis.com/updates/working/manifold-([\\d.]+)-x64.zip",
         "replace": "$1"
     },
     "autoupdate": {
         "url": "http://www.manifoldgis.com/updates/working/manifold-$version-x64.zip",
         "extract_dir": "manifold-$version-x64",
         "hash": {
-            "url": "http://www.manifold.net/updates/downloads.shtml",
-            "regex": "manifold-[0-9.]+-x64.zip.+ $sha256"
+            "url": "https://manifold.net/updates/download_9.shtml",
+            "regex": "manifold-$version-x64.zip.+ $sha256"
         },
         "note": "Note after autoupdate"
     }
