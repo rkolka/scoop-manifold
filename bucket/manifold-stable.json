@@ -1,0 +1,36 @@
+{
+    "version": "9.0.175",
+    "description": "Manifold 9 is powerful parallel GIS, ETL, data science and DBMS tool. Manifold official builds are issued about every 4-6 months.",
+    "homepage": "http://manifold.net/",
+    "license": "Proprietary",
+    "suggest": {
+        "Microsoft Visual C++ Redistributable 2017": "extras/vcredist2017"
+    },
+    "url": "http://www.manifoldgis.com/updates/manifold-9.0.175-x64.zip",
+    "hash": "d5fdf31fe309a81fd8549f6bf882a93b5a91acec0b150d0c13da1c71268186ed",
+    "extract_dir": "manifold-9.0.175-x64",
+    "shortcuts": [
+        [
+            "bin64\\manifold.exe",
+            "Manifold 9 Stable"
+        ],
+        [
+            "bin\\manifold.exe",
+            "Manifold 9 Stable (32-bit mode)"
+        ]
+    ],
+    "checkver": {
+        "url": "http://www.georeference.org/forum/",
+        "regex": "Manifold 9.+:.+(9\\.0\\.[\\d]+)",
+        "replace": "$1"
+    },
+    "autoupdate": {
+        "url": "http://www.manifoldgis.com/updates/manifold-$version-x64.zip",
+        "extract_dir": "manifold-$version-x64",
+        "hash": {
+            "url": "http://www.manifold.net/updates/downloads.shtml",
+            "regex": "manifold-9\\.0\\.[\\d]+-x64.zip.+ $sha256"
+        },
+        "note": "Note after autoupdate"
+    }
+}
