@@ -20,8 +20,8 @@
         ]
     ],
     "checkver": {
-        "url": "http://www.georeference.org/forum/",
-        "regex": "Manifold 9 Edge.+:.+(9\\.0\\.[\\d]+)",
+        "url": "https://manifold.net/updates/download_viewer.shtml",
+        "regex": "https://manifoldgis.com/updates/working/manifold-viewer-([\\d.]+)-x64.zip",
         "replace": "$1"
     },
     "autoupdate": {
@@ -29,7 +29,7 @@
         "extract_dir": "manifold-viewer-$version-x64",
         "hash": {
             "url": "http://www.manifold.net/updates/download_viewer.shtml",
-            "regex": "manifold-viewer-9\\.0\\.[\\d]+-x64.zip.+ $sha256"
+            "regex": "manifold-viewer-$version-x64.zip.+ $sha256"
         },
         "note": "Note after autoupdate"
     }
