@@ -11,25 +11,29 @@
                 "checkver",
                 "'${file}'",
                 "--additional-options",
-                "-Force",
+                "-Force"
             ],
             "options": {
                 "cwd": "${workspaceFolder}",
                 "env": {
-                    "SCOOP_DEBUG": "true",
-                },
+                    "SCOOP_DEBUG": "true"
+                }
             },
             "presentation": {
                 "echo": true,
                 "reveal": "silent",
                 "focus": false,
                 "panel": "shared",
-                "showReuseMessage": false,
+                "showReuseMessage": false
             },
             "problemMatcher": [],
             "runOptions": {
-                "instanceLimit": 99,
+                "instanceLimit": 99
             },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         },
         {
             "label": "Missing Checkver",
@@ -38,17 +42,17 @@
             "command": "shovel",
             "args": [
                 "utils",
-                "missing-checkver",
+                "missing-checkver"
             ],
             "presentation": {
                 "echo": true,
                 "reveal": "silent",
                 "focus": false,
                 "panel": "shared",
-                "showReuseMessage": false,
+                "showReuseMessage": false
             },
             "group": "test",
-            "problemMatcher": [],
+            "problemMatcher": []
         },
         {
             "label": "Push Auto-PR",
@@ -59,13 +63,13 @@
                 "utils",
                 "auto-pr",
                 "--additional-options",
-                "-Push",
+                "-Push"
             ],
             "options": {
                 "cwd": "${workspaceFolder}",
                 "env": {
-                    "SCOOP_DEBUG": "true",
-                },
+                    "SCOOP_DEBUG": "true"
+                }
             },
             "presentation": {
                 "echo": true,
@@ -73,9 +77,9 @@
                 "focus": false,
                 "panel": "shared",
                 "showReuseMessage": true,
-                "clear": false,
+                "clear": false
             },
-            "problemMatcher": [],
+            "problemMatcher": []
         },
         {
             "label": "Checkhashes Actual",
@@ -86,18 +90,18 @@
                 "checkhashes",
                 "'${file}'",
                 "--additional-options",
-                "-Force",
+                "-Force"
             ],
             "options": {
                 "cwd": "${workspaceFolder}",
                 "env": {
-                    "SCOOP_DEBUG": "true",
-                },
+                    "SCOOP_DEBUG": "true"
+                }
             },
             "problemMatcher": [],
             "runOptions": {
-                "instanceLimit": 99,
-            },
+                "instanceLimit": 99
+            }
         },
         {
             "label": "Purge Uninstall Actual",
@@ -107,25 +111,25 @@
             "args": [
                 "uninstall",
                 "--purge",
-                "'${fileBasenameNoExtension}'",
+                "'${fileBasenameNoExtension}'"
             ],
             "options": {
                 "cwd": "${workspaceFolder}",
                 "env": {
-                    "SCOOP_DEBUG": "true",
-                },
+                    "SCOOP_DEBUG": "true"
+                }
             },
             "presentation": {
                 "echo": true,
                 "reveal": "silent",
                 "focus": false,
                 "panel": "shared",
-                "showReuseMessage": false,
+                "showReuseMessage": false
             },
             "problemMatcher": [],
             "runOptions": {
-                "instanceLimit": 99,
-            },
+                "instanceLimit": 99
+            }
         },
         {
             "label": "Install Actual",
@@ -135,19 +139,19 @@
                 "install",
                 "--arch",
                 "${input:pickArchitectureType}",
-                "'${file}'",
+                "'${file}'"
             ],
             "options": {
                 "cwd": "${workspaceFolder}",
                 "env": {
-                    "SCOOP_DEBUG": "true",
-                },
+                    "SCOOP_DEBUG": "true"
+                }
             },
             "problemMatcher": [],
             "runOptions": {
                 "reevaluateOnRerun": false,
-                "instanceLimit": 99,
-            },
+                "instanceLimit": 99
+            }
         },
         {
             "label": "ReInstall Actual",
@@ -156,12 +160,12 @@
             "options": {
                 "cwd": "${workspaceFolder}",
                 "env": {
-                    "SCOOP_DEBUG": "true",
-                },
+                    "SCOOP_DEBUG": "true"
+                }
             },
             "dependsOn": [
                 "Purge Uninstall Actual",
-                "Install Actual",
+                "Install Actual"
             ],
             "dependsOrder": "sequence",
             "presentation": {
@@ -169,12 +173,12 @@
                 "reveal": "silent",
                 "focus": false,
                 "panel": "shared",
-                "showReuseMessage": false,
+                "showReuseMessage": false
             },
             "problemMatcher": [],
             "runOptions": {
-                "instanceLimit": 99,
-            },
+                "instanceLimit": 99
+            }
         },
         {
             "label": "Force Update Actual",
@@ -184,19 +188,19 @@
             "args": [
                 "update",
                 "--force",
-                "'${fileBasenameNoExtension}'",
+                "'${fileBasenameNoExtension}'"
             ],
             "options": {
                 "cwd": "${workspaceFolder}",
                 "env": {
-                    "SCOOP_DEBUG": "true",
-                },
+                    "SCOOP_DEBUG": "true"
+                }
             },
             "problemMatcher": [],
             "runOptions": {
                 "instanceLimit": 99,
-                "reevaluateOnRerun": false,
-            },
+                "reevaluateOnRerun": false
+            }
         },
         {
             "label": "Download",
@@ -206,19 +210,19 @@
                 "download",
                 "--all-architectures",
                 "--skip",
-                "'${file}'",
+                "'${file}'"
             ],
             "options": {
                 "cwd": "${workspaceFolder}",
                 "env": {
-                    "SCOOP_DEBUG": "true",
-                },
+                    "SCOOP_DEBUG": "true"
+                }
             },
             "problemMatcher": [],
             "runOptions": {
-                "instanceLimit": 99,
-            },
-        },
+                "instanceLimit": 99
+            }
+        }
     ],
     "inputs": [
         {
