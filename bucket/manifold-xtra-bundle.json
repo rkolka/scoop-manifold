@@ -11,6 +11,12 @@
             ""
         ]
     },
+    "pre_install": [
+        "$logFilesDir = New-Item -ItemType Directory \"$dir\\shared\\logfiles\"",
+        "'manifold.loghere' | ForEach-Object {",
+        "   if (!(Test-Path \"$persist_dir\\shared\\logfiles\\$_\")) { New-Item \"$dir\\shared\\logfiles\\$_\" | Out-Null }",
+        "}"
+    ],
     "url": [
         "http://www.manifoldgis.com/updates/working/manifold-9.0.176-x64.zip",
         "http://manifold.net/files/ui.zip",
