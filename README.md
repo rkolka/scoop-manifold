@@ -18,12 +18,12 @@ $ `scoop search manifold`
 
 manifold-bucket bucket:
 
-- manifold-edge (9.0.176.1)
+- manifold-edge (9.0.176.2)
 - manifold-stable-bundle (9.0.176)
 - manifold-stable (9.0.176)
-- manifold-viewer-edge (9.0.176.1)
+- manifold-viewer-edge (9.0.176.2)
 - manifold-viewer-stable (9.0.176)
-- manifold-xtra-bundle (9.0.176.1)
+- manifold-xtra-bundle (9.0.176.2)
 
 ### Install desired version
 
@@ -31,7 +31,7 @@ $ `scoop install manifold-edge`
 
 ## Descriptions
 
-### manifold-edge (9.0.176.1) :+1: **Recommended.**
+### manifold-edge (9.0.176.2) :+1: **Recommended.**
 
 Manifold 9 is powerful parallel GIS, ETL, data science and DBMS tool. Cutting Edge builds are issued monthly or semimonthly.
 
@@ -39,11 +39,11 @@ Manifold 9 is powerful parallel GIS, ETL, data science and DBMS tool. Cutting Ed
 
 Official build of Manifold 9. Manifold official builds are issued about every 4-6 months.
 
-### manifold-viewer-edge (9.0.176.1) ***Free viewer!*** :+1: **Recommended.**
+### manifold-viewer-edge (9.0.176.2) ***Free viewer!*** :+1: **Recommended.**
 
 Manifold Viewer is the free, read-only version of Manifold Release 9 - a GIS, ETL, data science and DBMS tool. Cutting Edge builds are issued monthly or semimonthly.
 
-### manifold-viewer-stable (9.0.176) ***Free viewer!***
+### manifold-viewer-stable (9.0.176.2) ***Free viewer!***
 
 Official build of Manifold Viewer. Manifold official builds are issued about every 4-6 months.
 
