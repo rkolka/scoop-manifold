@@ -4,7 +4,7 @@
     "homepage": "http://manifold.net/",
     "license": "Freeware",
     "suggest": {
-        "Microsoft Visual C++ Redistributable 2017": "extras/vcredist2017"
+        "Microsoft Visual C++ Redistributable 2022": "extras/vcredist2022"
     },
     "url": "http://www.manifoldgis.com/updates/manifold-viewer-9.0.176-x64.zip",
     "hash": "5f0100f0bd544ef811648426fb91d1cc8838003a2729ff29cc17d92d7582bfc1",

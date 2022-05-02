@@ -4,7 +4,7 @@
     "homepage": "http://manifold.net/",
     "license": "Proprietary",
     "suggest": {
-        "Microsoft Visual C++ Redistributable 2017": "extras/vcredist2017"
+        "Microsoft Visual C++ Redistributable 2022": "extras/vcredist2022"
     },
     "url": "http://www.manifoldgis.com/updates/manifold-9.0.176-x64-fat.zip",
     "hash": "036c05560bd40529a53cd29530eefaace5867a830a253555ec39d47a3fc85993",

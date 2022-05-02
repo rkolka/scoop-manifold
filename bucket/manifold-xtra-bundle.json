@@ -5,7 +5,7 @@
     "license": "Proprietary",
     "suggest": {
         "Array": [
-            "extras/vcredist2017",
+            "extras/vcredist2022",
             "Ironpython",
             "gdal",
             ""
