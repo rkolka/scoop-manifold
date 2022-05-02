@@ -21,12 +21,12 @@
     ],
     "checkver": {
         "url": "https://manifold.net/updates/download_viewer.shtml",
-        "regex": "href=\"https://manifoldgis.com/updates/working/manifold-viewer-([\\d.]+)-x64.zip\"><img class=\"image left\" src=\"/images/viewer_edge_btn.png\"",
+        "regex": "href=\"https://manifoldgis.com/updates/working/manifold-viewer-([\\d.\\-r]+)-x64.zip\"><img class=\"image left\" src=\"/images/viewer_edge_btn.png\"",
         "replace": "$1"
     },
     "autoupdate": {
         "url": "http://www.manifoldgis.com/updates/working/manifold-viewer-$version-x64.zip",
-        "extract_dir": "manifold-viewer-$version-x64",
+        "extract_dir": "manifold-viewer-$matchHead.$buildVersion-x64",
         "hash": {
             "url": "https://manifold.net/updates/download_viewer.shtml",
             "regex": "manifold-viewer-$version-x64.zip.+ $sha256"
