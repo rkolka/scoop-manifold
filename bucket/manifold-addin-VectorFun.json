@@ -17,7 +17,7 @@
         "script": [
             "$sharedDir = \"$(appdir 'manifold-xtra-bundle' $global)\\current\\shared\"",
             "$addinDir = \"$sharedDir\\Addins\\VectorFun\"",
-            "Remove-Item -Recurse $addinDir"
+            "if (Test-Path $addinDir) { Remove-Item -Recurse $addinDir }"
         ]
     },
     "checkver": {
