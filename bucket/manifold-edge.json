@@ -6,7 +6,7 @@
     "suggest": {
         "Microsoft Visual C++ Redistributable 2022": "extras/vcredist2022"
     },
-    "url": "http://www.manifoldgis.com/updates/working/manifold-9.0.176.6-x64.zip",
+    "url": "https://manifoldgis.com/updates/working/manifold-9.0.176.6-x64.zip",
     "hash": "508da372e66a075f55722de65f37dd1a1f30a8b5a7741b9a2242ccf40f8c757e",
     "extract_dir": "manifold-9.0.176.6-x64",
     "bin": "bin64\\manifold.exe",
@@ -34,7 +34,7 @@
         "replace": "$1"
     },
     "autoupdate": {
-        "url": "http://www.manifoldgis.com/updates/working/manifold-$version-x64.zip",
+        "url": "https://manifoldgis.com/updates/working/manifold-$version-x64.zip",
         "extract_dir": "manifold-$matchHead.$buildVersion-x64",
         "hash": {
             "url": "https://manifold.net/updates/download_9.shtml",
