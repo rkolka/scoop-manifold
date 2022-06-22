@@ -1,41 +1,40 @@
 {
     "version": "9.0.176.6",
-    "description": "Cutting Edge build of Manifold Release 9 (custom experiment)",
+    "description": "Cutting Edge build of Manifold Release 9 (+custom experiments)",
     "homepage": "http://manifold.net/",
     "license": "Proprietary",
     "post_install": [
         "if (!(Test-Path \"$persist_dir\\shared\\logfiles\")) { New-Item -ItemType Directory \"$dir\\shared\\logfiles\" | Out-Null }",
         "if (!(Test-Path \"$persist_dir\\shared\\logfiles\\manifold.loghere\")) { New-Item \"$dir\\shared\\logfiles\\manifold.loghere\" | Out-Null }"
     ],
-
     "url": [
-        "http://www.manifoldgis.com/updates/working/manifold-9.0.176.6-x64.zip",
-        "http://manifold.net/files/ui.zip",
-        "http://www.manifoldgis.com/files/open_source_db_64.zip",
-        "http://www.manifoldgis.com/files/ironpython-2.7.9-net45.zip"
+        "https://manifoldgis.com/updates/working/manifold-9.0.176.6-x64.zip",
+        "https://manifoldgis.com/files/open_source_db_64.zip",
+        "https://manifoldgis.com/files/ironpython-2.7.9-net45.zip",
+        "https://manifoldgis.com/files/grids.dat"
     ],
     "hash": [
         "508da372e66a075f55722de65f37dd1a1f30a8b5a7741b9a2242ccf40f8c757e",
-        "0ed0eabbd518386f7ddba38a7db57471ff8665f9ee7ca4493aef4b87a1b59308",
         "386369183f428c780bb859b7d8ea0e0c0493044cb6fb4826d0306f5aa1550d42",
-        "b03d37c3e3e14bb6692634c6d805d2c5222441a38a9655d99c207778fd7c74da"
+        "b03d37c3e3e14bb6692634c6d805d2c5222441a38a9655d99c207778fd7c74da",
+        "06995736a007f0fa75f4bc5a80b8596f7a81e9b5d124ee92afd0502347314f5d"
     ],
     "extract_dir": "manifold-9.0.176.6-x64",
     "extract_to": [
         ".",
         "bin64\\",
-        "bin64\\",
+        "shared\\",
         "shared\\"
     ],
     "bin": "bin64\\manifold.exe",
     "shortcuts": [
         [
             "bin64\\manifold.exe",
-            "Manifold RK"
+            "Manifold XTRA"
         ],
         [
             "bin\\manifold.exe",
-            "Manifold RK (32bit mode)"
+            "Manifold XTRA (32bit mode)"
         ]
     ],
     "persist": [
@@ -48,7 +47,7 @@
         "replace": "$1"
     },
     "autoupdate": {
-        "url": "http://www.manifoldgis.com/updates/working/manifold-$version-x64.zip",
+        "url": "https://manifoldgis.com/updates/working/manifold-$version-x64.zip",
         "extract_dir": "manifold-$matchHead.$buildVersion-x64",
         "hash": {
             "url": "https://manifold.net/updates/download_9.shtml",

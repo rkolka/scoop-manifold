@@ -121,7 +121,7 @@
         "replace": "$1"
     },
     "autoupdate": {
-        "url": "http://www.manifoldgis.com/updates/working/manifold-$version-x64.zip",
+        "url": "https://manifoldgis.com/updates/working/manifold-$version-x64.zip",
         "hash": { // Some vendors do not ship hashes
             "url": "http://www.manifold.net/updates/downloads.shtml",
             "regex": "$sha256.Release 9 Edge: Get the latest,"
