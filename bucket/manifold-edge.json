@@ -20,6 +20,14 @@
             "Manifold 9 (32bit mode)"
         ]
     ],
+    "persist": [
+        "shared\\logfiles",
+        "shared\\Addins"
+    ],
+    "post_install": [
+        "if (!(Test-Path \"$persist_dir\\shared\\logfiles\")) { New-Item -ItemType Directory \"$dir\\shared\\logfiles\" | Out-Null }",
+        "if (!(Test-Path \"$persist_dir\\shared\\logfiles\\manifold.loghere\")) { New-Item \"$dir\\shared\\logfiles\\manifold.loghere\" | Out-Null }"
+    ],
     "checkver": {
         "url": "https://manifold.net/updates/download_9.shtml",
         "regex": "href=\"https://manifoldgis.com/updates/working/manifold-([\\d.\\-r]+)-x64.zip\">Release 9 Edge</a>",

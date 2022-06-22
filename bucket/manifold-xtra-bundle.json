@@ -3,20 +3,11 @@
     "description": "Cutting Edge build of Manifold Release 9 (custom experiment)",
     "homepage": "http://manifold.net/",
     "license": "Proprietary",
-    "suggest": {
-        "Array": [
-            "extras/vcredist2022",
-            "Ironpython",
-            "gdal",
-            ""
-        ]
-    },
-    "pre_install": [
-        "$logFilesDir = New-Item -ItemType Directory \"$dir\\shared\\logfiles\"",
-        "'manifold.loghere' | ForEach-Object {",
-        "   if (!(Test-Path \"$persist_dir\\shared\\logfiles\\$_\")) { New-Item \"$dir\\shared\\logfiles\\$_\" | Out-Null }",
-        "}"
+    "post_install": [
+        "if (!(Test-Path \"$persist_dir\\shared\\logfiles\")) { New-Item -ItemType Directory \"$dir\\shared\\logfiles\" | Out-Null }",
+        "if (!(Test-Path \"$persist_dir\\shared\\logfiles\\manifold.loghere\")) { New-Item \"$dir\\shared\\logfiles\\manifold.loghere\" | Out-Null }"
     ],
+
     "url": [
         "http://www.manifoldgis.com/updates/working/manifold-9.0.176.6-x64.zip",
         "http://manifold.net/files/ui.zip",
@@ -49,8 +40,7 @@
     ],
     "persist": [
         "shared\\logfiles",
-        "shared\\add-ins",
-        "shared\\debug"
+        "shared\\Addins"
     ],
     "checkver": {
         "url": "https://manifold.net/updates/download_9.shtml",
