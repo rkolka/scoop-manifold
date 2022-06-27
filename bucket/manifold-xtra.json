@@ -24,8 +24,8 @@
     "persist": [
         "shared\\logfiles",
         "shared\\Addins",
-        "opt",
-        "gdal"
+        "bin64\\opt",
+        "bin64\\gdal"
     ],
     "checkver": {
         "url": "https://manifold.net/updates/download_9.shtml",
