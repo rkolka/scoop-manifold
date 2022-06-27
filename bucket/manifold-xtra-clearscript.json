@@ -3,7 +3,7 @@
     "description": "ClearScript binaries for Manifold 9",
     "homepage": "https://github.com/microsoft/ClearScript",
     "license": "MIT",
-    "depends": "scoop-manifold/manifold-xtra-base",
+    "depends": "scoop-manifold/manifold-xtra",
     "url": [
         "https://www.nuget.org/api/v2/package/Microsoft.ClearScript.Core/7.3.0/#Microsoft.ClearScript.Core.7.3.0.nupkg",
         "https://www.nuget.org/api/v2/package/Microsoft.ClearScript.V8.Native.win-x64/7.3.0/#Microsoft.ClearScript.V8.Native.win-x64.7.3.0.nupkg",
@@ -42,14 +42,14 @@
     ],
     "installer": {
         "script": [
-            "$mfdDir = \"$(appdir 'manifold-xtra-base' $global)\\current\\bin64\"",
+            "$mfdDir = \"$(appdir 'manifold-xtra' $global)\\current\\bin64\"",
             "Copy-Item \"$dir\\ClearScript*.dll\" \"$mfdDir\\\"",
             "Copy-Item \"$dir\\Newtonsoft*.dll\" \"$mfdDir\\\""
         ]
     },
     "uninstaller": {
         "script": [
-            "$mfdDir = \"$(appdir 'manifold-xtra-base' $global)\\current\\bin64\"",
+            "$mfdDir = \"$(appdir 'manifold-xtra' $global)\\current\\bin64\"",
             "if (Test-Path $mfdDir) { Remove-Item \"$mfdDir\\ClearScript*.dll\" }",
             "if (Test-Path $mfdDir) { Remove-Item \"$mfdDir\\Newtonsoft*.dll\" }"
         ]

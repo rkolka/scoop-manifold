@@ -23,7 +23,7 @@ manifold-bucket bucket:
 - manifold-stable (9.0.176)
 - manifold-viewer-edge (9.0.176.7)
 - manifold-viewer-stable (9.0.176)
-- manifold-xtra-base (9.0.176.7)
+- manifold-xtra (9.0.176.7)
 
 ### Install desired version
 
@@ -51,6 +51,6 @@ Official build of Manifold Viewer. Manifold official builds are issued about eve
 
 Official build Manifold 9 + optional third-party software. This package includes third-party libraries that provides IronPython scripting and MySQL, PostgreSQL/PostGIS, and SQLite drivers. It also includes 233 MB grids.dat for coordinate transformations.
 
-### manifold-xtra-base (9.0.176.7)
+### manifold-xtra (9.0.176.7)
 
 Cutting Edge build of Manifold 9 + custom experiments. May change unexpectedly.
