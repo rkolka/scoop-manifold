@@ -116,15 +116,16 @@
     // "checkver": "regex", Match regex inside string on homepage
     // "checkver": "github", If homepage is set to github repo
     "checkver": {
-        "url": "http://www.georeference.org/forum/",
-        "regex": "Manifold 9 Edge: (9\\.0\\.[\\d.]+)",
+        "url": "https://exampleurl.cz",
+        "jsonpath": "$.cosi",
+        "regex": "REGEXTOMATCH([\\d.]+)",
         "replace": "$1"
     },
     "autoupdate": {
-        "url": "https://manifoldgis.com/updates/working/manifold-$version-x64.zip",
+        "url": "https://ash258.com#/newName.zip",
         "hash": { // Some vendors do not ship hashes
-            "url": "http://www.manifold.net/updates/downloads.shtml",
-            "regex": "$sha256.Release 9 Edge: Get the latest,"
+            "url": "https://ash258.com",
+            "regex": "do not write regexes for hash algorithms, use variables ($md5, $sha1, $sha256, $sha512, $checksum)"
         },
         "note": "Note after autoupdate"
     }
