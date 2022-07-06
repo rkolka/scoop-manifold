@@ -18,12 +18,12 @@ $ `scoop search manifold`
 
 manifold-bucket bucket:
 
-- manifold-edge (9.0.176.7)
-- manifold-stable-bundle (9.0.176)
-- manifold-stable (9.0.176)
-- manifold-viewer-edge (9.0.176.7)
-- manifold-viewer-stable (9.0.176)
-- manifold-xtra (9.0.176.7)
+- manifold-edge (9.0.177)
+- manifold-stable-bundle (9.0.177)
+- manifold-stable (9.0.177)
+- manifold-viewer-edge (9.0.177)
+- manifold-viewer-stable (9.0.177)
+- manifold-xtra (9.0.177)
 
 ### Install desired version
 
@@ -31,26 +31,26 @@ $ `scoop install manifold-edge`
 
 ## Descriptions
 
-### manifold-edge (9.0.176.7) :+1: **Recommended.**
+### manifold-edge (9.0.177) :+1: **Recommended.**
 
 Manifold 9 is powerful parallel GIS, ETL, data science and DBMS tool. Cutting Edge builds are issued monthly or semimonthly.
 
-### manifold-stable (9.0.176)
+### manifold-stable (9.0.177)
 
 Official build of Manifold 9. Manifold official builds are issued about every 4-6 months.
 
-### manifold-viewer-edge (9.0.176.7) ***Free viewer!*** :+1: **Recommended.**
+### manifold-viewer-edge (9.0.177) ***Free viewer!*** :+1: **Recommended.**
 
 Manifold Viewer is the free, read-only version of Manifold Release 9 - a GIS, ETL, data science and DBMS tool. Cutting Edge builds are issued monthly or semimonthly.
 
-### manifold-viewer-stable (9.0.176) ***Free viewer!***
+### manifold-viewer-stable (9.0.177) ***Free viewer!***
 
 Official build of Manifold Viewer. Manifold official builds are issued about every 4-6 months.
 
-### manifold-stable-bundle (9.0.176)
+### manifold-stable-bundle (9.0.177)
 
 Official build Manifold 9 + optional third-party software. This package includes third-party libraries that provides IronPython scripting and MySQL, PostgreSQL/PostGIS, and SQLite drivers. It also includes 233 MB grids.dat for coordinate transformations.
 
-### manifold-xtra (9.0.176.7)
+### manifold-xtra (9.0.177)
 
 Cutting Edge build of Manifold 9 + custom experiments. May change unexpectedly.
