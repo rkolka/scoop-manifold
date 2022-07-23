@@ -10,21 +10,21 @@
     "url": "https://manifoldgis.com/updates/working/manifold-9.0.177.2.zip",
     "hash": "a5fd077e29a355da78ace09d689fc00f5a7103cbb240d6b2d0b638159be03145",
     "extract_dir": "manifold-9.0.177.2",
-    "bin": "bin64\\manifold.exe",
+    "bin": "manifold.exe",
     "shortcuts": [
         [
-            "bin64\\manifold.exe",
+            "manifold.exe",
             "Manifold XTRA"
         ]
     ],
     "persist": [
         "extras\\logfiles",
         "extras\\Addins",
-        "bin64\\opt",
-        "bin64\\gdal",
-        "bin64\\gdalplugins",
+        "opt",
+        "gdal",
+        "gdalplugins",
         "persist_in_extras",
-        "persist_in_bin64"
+        "persist_in_installdir"
     ],
     "checkver": {
         "url": "https://manifold.net/updates/download_9.shtml",
