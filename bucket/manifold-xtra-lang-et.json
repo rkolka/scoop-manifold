@@ -8,14 +8,14 @@
     "hash": "2cedc5a66612cac5f738d2f545815c336a877f98ecef026718a25282801e882f",
     "installer": {
         "script": [
-            "$mfdDir = \"$(appdir 'manifold-xtra' $global)\\current\\bin64\"",
+            "$mfdDir = \"$(appdir 'manifold-xtra' $global)\\current\"",
             "Copy-Item \"$dir\\ui.et*.txt\" \"$mfdDir\\\"",
             "Copy-Item \"$dir\\ui.en_alt.txt\" \"$mfdDir\\\""
         ]
     },
     "uninstaller": {
         "script": [
-            "$mfdDir = \"$(appdir 'manifold-xtra' $global)\\current\\bin64\"",
+            "$mfdDir = \"$(appdir 'manifold-xtra' $global)\\current\"",
             "Remove-Item \"$mfdDir\\ui.et*.txt\"",
             "Remove-Item \"$mfdDir\\ui.en_alt.txt\""
         ]
