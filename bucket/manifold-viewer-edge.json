@@ -1,35 +1,31 @@
 {
-    "version": "9.0.177.1",
+    "version": "9.0.177.2",
     "description": "Manifold Viewer is the free, read-only version of Manifold Release 9 - a GIS, ETL, data science and DBMS tool",
     "homepage": "http://manifold.net/",
     "license": "Freeware",
     "suggest": {
         "Microsoft Visual C++ Redistributable 2022": "extras/vcredist2022"
     },
-    "url": "https://manifoldgis.com/updates/working/manifold-viewer-9.0.177.1-x64.zip",
-    "hash": "69a75bf586230e2b793b7bc0c57dc16eafd4fc9a70d533b9a3ec519142834a41",
-    "extract_dir": "manifold-viewer-9.0.177.1-x64",
+    "url": "https://manifoldgis.com/updates/working/manifold-viewer-9.0.177.2.zip",
+    "hash": "3fb001f656490a853e836a612dac84a472f58875bf2b7407e1e353c9bbc2ac72",
+    "extract_dir": "manifold-viewer-9.0.177.2",
     "shortcuts": [
         [
             "bin64\\manifold.exe",
             "Manifold Viewer"
-        ],
-        [
-            "bin\\manifold.exe",
-            "Manifold Viewer (32bit mode)"
         ]
     ],
     "checkver": {
         "url": "https://manifold.net/updates/download_viewer.shtml",
-        "regex": "href=\"https://manifoldgis.com/updates/working/manifold-viewer-([\\d.\\-r]+)-x64.zip\"><img class=\"image left\" src=\"/images/viewer_edge_btn.png\"",
+        "regex": "href=\"https://manifoldgis.com/updates/working/manifold-viewer-([\\d.\\-r]+).zip\"><img class=\"image left\" src=\"/images/viewer_edge_btn.png\"",
         "replace": "$1"
     },
     "autoupdate": {
-        "url": "https://manifoldgis.com/updates/working/manifold-viewer-$version-x64.zip",
-        "extract_dir": "manifold-viewer-$matchHead.$buildVersion-x64",
+        "url": "https://manifoldgis.com/updates/working/manifold-viewer-$version.zip",
+        "extract_dir": "manifold-viewer-$version",
         "hash": {
             "url": "https://manifold.net/updates/download_viewer.shtml",
-            "regex": "manifold-viewer-$version-x64.zip.+ $sha256"
+            "regex": "manifold-viewer-$version.zip.+ $sha256"
         },
         "note": "Note after autoupdate"
     }
