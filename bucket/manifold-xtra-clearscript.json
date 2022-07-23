@@ -42,14 +42,14 @@
     ],
     "installer": {
         "script": [
-            "$mfdDir = \"$(appdir 'manifold-xtra' $global)\\current\\bin64\"",
+            "$mfdDir = \"$(appdir 'manifold-xtra' $global)\\current\"",
             "Copy-Item \"$dir\\ClearScript*.dll\" \"$mfdDir\\\"",
             "Copy-Item \"$dir\\Newtonsoft*.dll\" \"$mfdDir\\\""
         ]
     },
     "uninstaller": {
         "script": [
-            "$mfdDir = \"$(appdir 'manifold-xtra' $global)\\current\\bin64\"",
+            "$mfdDir = \"$(appdir 'manifold-xtra' $global)\\current\"",
             "if (Test-Path $mfdDir) { Remove-Item \"$mfdDir\\ClearScript*.dll\" }",
             "if (Test-Path $mfdDir) { Remove-Item \"$mfdDir\\Newtonsoft*.dll\" }"
         ]

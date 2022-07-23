@@ -8,13 +8,13 @@
     "hash": "386369183f428c780bb859b7d8ea0e0c0493044cb6fb4826d0306f5aa1550d42",
     "installer": {
         "script": [
-            "$mfdDir = \"$(appdir 'manifold-xtra' $global)\\current\\bin64\"",
+            "$mfdDir = \"$(appdir 'manifold-xtra' $global)\\current\"",
             "Copy-Item -Recurse \"$dir\\*\" \"$mfdDir\\\""
         ]
     },
     "uninstaller": {
         "script": [
-            "$mfdDir = \"$(appdir 'manifold-xtra' $global)\\current\\bin64\"",
+            "$mfdDir = \"$(appdir 'manifold-xtra' $global)\\current\"",
             "$xtraDir = \"$mfdDir\\opt\"",
             "if (Test-Path $xtraDir) { Remove-Item -Recurse $xtraDir }"
         ]

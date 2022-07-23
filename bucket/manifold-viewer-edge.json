@@ -11,7 +11,7 @@
     "extract_dir": "manifold-viewer-9.0.177.2",
     "shortcuts": [
         [
-            "bin64\\manifold.exe",
+            "manifold.exe",
             "Manifold Viewer"
         ]
     ],
