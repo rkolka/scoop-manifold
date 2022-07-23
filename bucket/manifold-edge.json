@@ -1,44 +1,40 @@
 {
-    "version": "9.0.177.1",
+    "version": "9.0.177.2",
     "description": "Manifold 9 is powerful parallel GIS, ETL, data science and DBMS tool",
     "homepage": "http://manifold.net/",
     "license": "Proprietary",
     "suggest": {
         "Microsoft Visual C++ Redistributable 2022": "extras/vcredist2022"
     },
-    "url": "https://manifoldgis.com/updates/working/manifold-9.0.177.1-x64.zip",
-    "hash": "c5906270f38e62a6335d577c79314661f32cc2d61739b3a1df2b57d664652080",
-    "extract_dir": "manifold-9.0.177.1-x64",
-    "bin": "bin64\\manifold.exe",
+    "url": "https://manifoldgis.com/updates/working/manifold-9.0.177.2.zip",
+    "hash": "a5fd077e29a355da78ace09d689fc00f5a7103cbb240d6b2d0b638159be03145",
+    "extract_dir": "manifold-9.0.177.2",
+    "bin": "manifold.exe",
     "shortcuts": [
         [
-            "bin64\\manifold.exe",
+            "manifold.exe",
             "Manifold 9"
-        ],
-        [
-            "bin\\manifold.exe",
-            "Manifold 9 (32bit mode)"
         ]
     ],
     "persist": [
-        "shared\\logfiles",
-        "shared\\Addins"
+        "extras\\logfiles",
+        "extras\\Addins"
     ],
     "post_install": [
-        "if (!(Test-Path \"$persist_dir\\shared\\logfiles\")) { New-Item -ItemType Directory \"$dir\\shared\\logfiles\" | Out-Null }",
-        "if (!(Test-Path \"$persist_dir\\shared\\logfiles\\manifold.loghere\")) { New-Item \"$dir\\shared\\logfiles\\manifold.loghere\" | Out-Null }"
+        "if (!(Test-Path \"$persist_dir\\extras\\logfiles\")) { New-Item -ItemType Directory \"$dir\\extras\\logfiles\" | Out-Null }",
+        "if (!(Test-Path \"$persist_dir\\extras\\logfiles\\manifold.loghere\")) { New-Item \"$dir\\extras\\logfiles\\manifold.loghere\" | Out-Null }"
     ],
     "checkver": {
         "url": "https://manifold.net/updates/download_9.shtml",
-        "regex": "href=\"https://manifoldgis.com/updates/working/manifold-([\\d.\\-r]+)-x64.zip\">Release 9 Edge</a>",
+        "regex": "href=\"https://manifoldgis.com/updates/working/manifold-([\\d.\\-r]+).zip\">Release 9 Edge</a>",
         "replace": "$1"
     },
     "autoupdate": {
-        "url": "https://manifoldgis.com/updates/working/manifold-$version-x64.zip",
-        "extract_dir": "manifold-$matchHead.$buildVersion-x64",
+        "url": "https://manifoldgis.com/updates/working/manifold-$version.zip",
+        "extract_dir": "manifold-$version",
         "hash": {
             "url": "https://manifold.net/updates/download_9.shtml",
-            "regex": "manifold-$version-x64.zip.+ $sha256"
+            "regex": "manifold-$version.zip.+ $sha256"
         },
         "note": "Note after autoupdate"
     }
