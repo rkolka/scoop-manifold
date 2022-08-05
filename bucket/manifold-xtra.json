@@ -1,5 +1,5 @@
 {
-    "version": "9.0.177.3",
+    "version": "9.0.177.4",
     "description": "Cutting Edge build of Manifold Release 9 (+custom experiments)",
     "homepage": "http://manifold.net/",
     "license": "Proprietary",
@@ -7,9 +7,9 @@
         "if (!(Test-Path \"$persist_dir\\extras\\logfiles\")) { New-Item -ItemType Directory \"$dir\\extras\\logfiles\" | Out-Null }",
         "if (!(Test-Path \"$persist_dir\\extras\\logfiles\\manifold.loghere\")) { New-Item \"$dir\\extras\\logfiles\\manifold.loghere\" | Out-Null }"
     ],
-    "url": "https://manifold.net/updates/working/manifold-9.0.177.3.zip",
-    "hash": "2ffcfb8fac0bea7f94951e8530c5adc4aaf3d96abb8d3ed5be4ce75a4e4b6f0a",
-    "extract_dir": "manifold-9.0.177.3",
+    "url": "https://manifold.net/updates/working/manifold-9.0.177.4.zip",
+    "hash": "6fc548ea705b7e047bfa0e1749f1e9cdfdd133e694db34e04fbfc70ce834a51e",
+    "extract_dir": "manifold-9.0.177.4",
     "bin": "manifold.exe",
     "shortcuts": [
         [
