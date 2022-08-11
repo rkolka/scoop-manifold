@@ -1,35 +1,31 @@
 {
-    "version": "9.0.177",
+    "version": "9.0.178",
     "description": "Manifold 9 is powerful parallel GIS, ETL, data science and DBMS tool. Manifold official builds are issued about every 4-6 months.",
     "homepage": "http://manifold.net/",
     "license": "Proprietary",
     "suggest": {
         "Microsoft Visual C++ Redistributable 2022": "extras/vcredist2022"
     },
-    "url": "https://manifoldgis.com/updates/manifold-9.0.177-x64.zip",
-    "hash": "3d074cbd63ee8189c8fde87d4a0807890ac80ab6441cae215a679208a6ec8b64",
-    "extract_dir": "manifold-9.0.177-x64",
+    "url": "https://manifold.net/updates/manifold-9.0.178.zip",
+    "hash": "54c3afebc1cc0ffb699720f433a5dc9dc9bcfe638bce62dd028cee5b4a7fad32",
+    "extract_dir": "manifold-9.0.178",
     "shortcuts": [
         [
             "bin64\\manifold.exe",
             "Manifold 9 Stable"
-        ],
-        [
-            "bin\\manifold.exe",
-            "Manifold 9 Stable (32-bit mode)"
         ]
     ],
     "checkver": {
         "url": "https://manifold.net/updates/download_9.shtml",
-        "regex": "href=\"https://manifoldgis.com/updates/manifold-([\\d.]+)-x64.zip\"><img class=\"image left\" src=\"/images/mfd9_base_btn.png\"",
+        "regex": "href=\"https://manifold.net/updates/manifold-([\\d.]+).zip\"><img class=\"image left\" src=\"/images/mfd9_base_btn.png\"",
         "replace": "$1"
     },
     "autoupdate": {
-        "url": "https://manifoldgis.com/updates/manifold-$version-x64.zip",
-        "extract_dir": "manifold-$version-x64",
+        "url": "https://manifold.net/updates/manifold-$version.zip",
+        "extract_dir": "manifold-$version",
         "hash": {
             "url": "https://manifold.net/updates/download_9.shtml",
-            "regex": "manifold-$version-x64.zip.+ $sha256"
+            "regex": "manifold-$version.zip.+ $sha256"
         },
         "note": "Note after autoupdate"
     }
