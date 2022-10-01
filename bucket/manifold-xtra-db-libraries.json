@@ -4,7 +4,7 @@
     "homepage": "https://manifold.net/updates/download_9.shtml#foss_dlls",
     "license": "LGPL-2.0-or-later",
     "depends": "scoop-manifold/manifold-xtra",
-    "url": "https://manifoldgis.com/files/open_source_db_64.zip",
+    "url": "https://manifold.net/files/open_source_db_64.zip",
     "hash": "386369183f428c780bb859b7d8ea0e0c0493044cb6fb4826d0306f5aa1550d42",
     "installer": {
         "script": [

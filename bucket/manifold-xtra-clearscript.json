@@ -1,25 +1,25 @@
 {
-    "version": "7.3.1",
+    "version": "7.3.4",
     "description": "ClearScript binaries for Manifold 9",
     "homepage": "https://github.com/microsoft/ClearScript",
     "license": "MIT",
     "depends": "scoop-manifold/manifold-xtra",
     "url": [
-        "https://www.nuget.org/api/v2/package/Microsoft.ClearScript.Core/7.3.1/#Microsoft.ClearScript.Core.7.3.1.nupkg",
-        "https://www.nuget.org/api/v2/package/Microsoft.ClearScript.V8.Native.win-x64/7.3.1/#Microsoft.ClearScript.V8.Native.win-x64.7.3.1.nupkg",
-        "https://www.nuget.org/api/v2/package/Microsoft.ClearScript.V8.ICUData/7.3.1/#Microsoft.ClearScript.V8.ICUData.7.3.1.nupkg",
-        "https://www.nuget.org/api/v2/package/Microsoft.ClearScript.Windows.Core/7.3.1/#Microsoft.ClearScript.Windows.Core.7.3.1.nupkg",
-        "https://www.nuget.org/api/v2/package/Microsoft.ClearScript.Windows/7.3.1/#Microsoft.ClearScript.Windows.7.3.1.nupkg",
-        "https://www.nuget.org/api/v2/package/Microsoft.ClearScript.V8/7.3.1/#Microsoft.ClearScript.V8.7.3.1.nupkg",
-        "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1/#Newtonsoft.Json.7.3.1.nupkg"
+        "https://www.nuget.org/api/v2/package/Microsoft.ClearScript.Core/7.3.4/#Microsoft.ClearScript.Core.7.3.4.nupkg",
+        "https://www.nuget.org/api/v2/package/Microsoft.ClearScript.V8.Native.win-x64/7.3.4/#Microsoft.ClearScript.V8.Native.win-x64.7.3.4.nupkg",
+        "https://www.nuget.org/api/v2/package/Microsoft.ClearScript.V8.ICUData/7.3.4/#Microsoft.ClearScript.V8.ICUData.7.3.4.nupkg",
+        "https://www.nuget.org/api/v2/package/Microsoft.ClearScript.Windows.Core/7.3.4/#Microsoft.ClearScript.Windows.Core.7.3.4.nupkg",
+        "https://www.nuget.org/api/v2/package/Microsoft.ClearScript.Windows/7.3.4/#Microsoft.ClearScript.Windows.7.3.4.nupkg",
+        "https://www.nuget.org/api/v2/package/Microsoft.ClearScript.V8/7.3.4/#Microsoft.ClearScript.V8.7.3.4.nupkg",
+        "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1/#Newtonsoft.Json.7.3.4.nupkg"
     ],
     "hash": [
-        "032d2fe33b0bb81b57acb5d54e6373bc42485398fa2d4ce471de9ee3a2389185",
-        "7aad026c1cda57b2779c5777b5e970d2ff0ea2be63940b7095b87eba02247a1b",
-        "a71898dd8f1233f14ea79e9724ee104f9e61f19d203c5251fd6b194092d9199b",
-        "28fa86781a02cdd0d7b66260c24e1cb56a7714dfa6349597aa154cfcf8a5a4b5",
-        "17b0a6bb5f6ecbe68bbe9810fa92a9bfafee81ae3e6e16b5948359708d9d2aa2",
-        "fc92024427c9030e7da132c153f2ec79e68d668ea8ebf608590f1b204a6de2a0",
+        "b5bbbcb437b89b615f957fe9c4f2f657c6843f19c5a185b2c46bdf6eab00ec3e",
+        "effb32cc50df84ce2772c6b2767fb94129525362d88e779fbf420ac76ef6e4bd",
+        "13094174e19e72e8063e70de2fcefa5495e0b84c7de4fa997e8f1e6a0b9771a5",
+        "c2de181c0abe540653ac0c3bd7701c57a30c3c4c79907ad8170081b7fd155db4",
+        "fa1e9104d50ecce38f64baaab96879f393318b2212f18ea62934921faef621ee",
+        "025aace42ed50e8f04601625b53e6edc3efea0c56c4f429eab371d8c8d8e113a",
         "2b6b52556e27e1b7913f33eedeb95568110c746bd64afff74357f1683878323a"
     ],
     "extract_dir": [
