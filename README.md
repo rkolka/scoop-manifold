@@ -33,19 +33,26 @@ $ `scoop install manifold-edge`
 
 ### manifold-edge (9.0.178.5) :+1: **Recommended.**
 
-Manifold 9 is powerful parallel GIS, ETL, data science and DBMS tool. Cutting Edge builds are issued monthly or semimonthly.
+Manifold 9 is powerful parallel GIS, ETL, data science and DBMS tool. Cutting Edge builds are issued monthly or semimonthly. 
+Get early access to latest improvements with these frequently issued builds. Recommended for daily heavy users and enthusiasts.
+These builds expire after a few months forcing user to keep up with updates, which is super easy with scoop.
 
 ### manifold-stable (9.0.178)
 
 Official build of Manifold 9. Manifold official builds are issued about every 4-6 months.
+Official builds never expire. Recommended for users who use Manifold less frequently and who value stability.
+
 
 ### manifold-viewer-edge (9.0.178.5) ***Free viewer!*** :+1: **Recommended.**
 
 Manifold Viewer is the free, read-only version of Manifold Release 9 - a GIS, ETL, data science and DBMS tool. Cutting Edge builds are issued monthly or semimonthly.
+Get early access to latest improvements with these frequently issued builds. Recommended for daily heavy users and enthusiasts.
+These builds expire after a few months forcing user to keep up with updates, which is super easy with scoop.
 
 ### manifold-viewer-stable (9.0.178) ***Free viewer!***
 
 Official build of Manifold Viewer. Manifold official builds are issued about every 4-6 months.
+Official builds never expire. Recommended for users who use Manifold less frequently and who value stability.
 
 ### manifold-stable-bundle (9.0.178)
 
