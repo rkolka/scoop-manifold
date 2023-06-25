@@ -1,14 +1,14 @@
 {
-    "version": "9.0.180.3",
+    "version": "9.0.180.4",
     "description": "Manifold 9 is powerful parallel GIS, ETL, data science and DBMS tool",
     "homepage": "http://manifold.net/",
     "license": "Proprietary",
     "suggest": {
         "Microsoft Visual C++ Redistributable 2022": "extras/vcredist2022"
     },
-    "url": "https://manifold.net/updates/working/manifold-9.0.180.3.zip",
-    "hash": "5d4174da81bd6b5c1262b171a62927bbfcaea1ea8619be7466ea0d37d8f5d558",
-    "extract_dir": "manifold-9.0.180.3",
+    "url": "https://manifold.net/updates/working/manifold-9.0.180.4.zip",
+    "hash": "eeb8ba59114023f95ae91120a1d27ab6d708a6e14d5ab96906782b84f9f61ee6",
+    "extract_dir": "manifold-9.0.180.4",
     "bin": "manifold.exe",
     "shortcuts": [
         [
