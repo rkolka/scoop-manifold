@@ -1,14 +1,14 @@
 {
-    "version": "9.0.180.5",
+    "version": "9.0.180.6",
     "description": "Manifold Viewer is the free, read-only version of Manifold Release 9 - a GIS, ETL, data science and DBMS tool",
     "homepage": "http://manifold.net/",
     "license": "Freeware",
     "suggest": {
         "Microsoft Visual C++ Redistributable 2022": "extras/vcredist2022"
     },
-    "url": "https://manifold.net/updates/working/manifold-viewer-9.0.180.5.zip",
-    "hash": "7fe3de6ada5449ac815018e74bb350770a1337bbbec16ef5fcf01c2542cce787",
-    "extract_dir": "manifold-viewer-9.0.180.5",
+    "url": "https://manifold.net/updates/working/manifold-viewer-9.0.180.6.zip",
+    "hash": "f3237d1fa27ff6d1a22d6e5bf69562d8e7c486dfb9f48165080125fdc0caaceb",
+    "extract_dir": "manifold-viewer-9.0.180.6",
     "shortcuts": [
         [
             "manifold.exe",
