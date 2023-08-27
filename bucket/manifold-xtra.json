@@ -20,11 +20,7 @@
     "persist": [
         "extras\\logfiles",
         "extras\\Addins",
-        "opt",
-        "gdal",
-        "gdalplugins",
-        "persist_in_extras",
-        "persist_in_installdir"
+        "gdal"
     ],
     "checkver": {
         "url": "https://manifold.net/updates/download_9.shtml",
