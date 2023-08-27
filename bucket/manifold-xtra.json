@@ -33,7 +33,6 @@
         "hash": {
             "url": "https://manifold.net/updates/download_9.shtml",
             "regex": "manifold-$version.zip.+ $sha256"
-        },
-        "note": "Note after autoupdate"
+        }
     }
 }
