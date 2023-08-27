@@ -5,7 +5,7 @@
             "label": "Checkver Actual",
             "detail": "Check version of currently opened manifest.",
             "type": "shell",
-            "command": "shovel",
+            "command": "scoop",
             "args": [
                 "utils",
                 "checkver",
@@ -39,7 +39,7 @@
             "label": "Missing Checkver",
             "detail": "Check if manifests have checkver and autoupdate properties.",
             "type": "shell",
-            "command": "shovel",
+            "command": "scoop",
             "args": [
                 "utils",
                 "missing-checkver"
@@ -58,7 +58,7 @@
             "label": "Push Auto-PR",
             "detail": "Execute checkver and push updated manifests.",
             "type": "shell",
-            "command": "shovel",
+            "command": "scoop",
             "args": [
                 "utils",
                 "auto-pr",
@@ -84,7 +84,7 @@
         {
             "label": "Checkhashes Actual",
             "type": "shell",
-            "command": "shovel",
+            "command": "scoop",
             "args": [
                 "utils",
                 "checkhashes",
@@ -107,7 +107,7 @@
             "label": "Purge Uninstall Actual",
             "detail": "Uninstall currently opened manifest and remove persisted data.",
             "type": "shell",
-            "command": "shovel",
+            "command": "scoop",
             "args": [
                 "uninstall",
                 "--purge",
@@ -134,7 +134,7 @@
         {
             "label": "Install Actual",
             "type": "shell",
-            "command": "shovel",
+            "command": "scoop",
             "args": [
                 "install",
                 "--arch",
@@ -184,7 +184,7 @@
             "label": "Force Update Actual",
             "detail": "Update currently opened manifest.",
             "type": "shell",
-            "command": "shovel",
+            "command": "scoop",
             "args": [
                 "update",
                 "--force",
@@ -205,7 +205,7 @@
         {
             "label": "Download",
             "type": "shell",
-            "command": "shovel",
+            "command": "scoop",
             "args": [
                 "download",
                 "--all-architectures",
